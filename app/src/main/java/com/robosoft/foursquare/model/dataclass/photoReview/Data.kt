@@ -1,0 +1,6 @@
+package com.robosoft.foursquare.model.dataclass.photoReview
+
+data class Data(
+    val _id: String,
+    val reviews: List<Review>
+)

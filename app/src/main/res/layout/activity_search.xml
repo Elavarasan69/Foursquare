@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.activity.SearchActivity">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/action_bar_search"
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:background="@color/violet"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/back_ibn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:minWidth="50dp"
+                android:minHeight="50dp"
+                android:src="@drawable/back_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <SearchView
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="55dp"
+                android:layout_toEndOf="@+id/back_ibn"
+                android:background="@drawable/custom_search_bg"
+                android:iconifiedByDefault="false"
+                android:queryHint="Search"
+                android:drawableStart="@drawable/search_icon"
+                app:layout_constraintEnd_toStartOf="@+id/filter_ibn"
+                app:layout_constraintStart_toEndOf="@+id/back_ibn"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <SearchView
+                android:id="@+id/near_me"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="55dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/custom_search_bg"
+                android:drawableTint="@color/grey"
+                android:iconifiedByDefault="false"
+                android:queryHint="Near Me"
+                android:searchIcon="@drawable/near_me_xhdpi"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/search" />
+
+            <ImageButton
+                android:id="@+id/filter_ibn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@color/transparent"
+                android:minWidth="50dp"
+                android:minHeight="50dp"
+                android:src="@drawable/filter_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/action_bar_search">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/search_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/place_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:fontFamily="@font/avenir_medium"
+                        android:paddingStart="24dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/near_by_places"
+                        android:textColor="#858585"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/search_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@+id/place_tv"
+                        tools:listitem="@layout/place_tab" />
+
+                    <TextView
+                        android:id="@+id/suggestion_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:fontFamily="@font/avenir_medium"
+                        android:paddingStart="24dp"
+                        android:paddingTop="10dp"
+                        android:text="Suggestions"
+                        android:textColor="#858585"
+                        android:textSize="20sp"
+                        app:layout_constraintTop_toBottomOf="@+id/search_recycler_view" />
+
+
+                        <TextView
+                            android:id="@+id/top_pick"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/avenir_book"
+                            android:paddingVertical="10dp"
+                            android:paddingStart="24dp"
+                            android:text="@string/top_pick"
+                            android:textColor="#8D8D8D"
+                            android:textSize="22sp"
+                            app:layout_constraintTop_toBottomOf="@+id/suggestion_tv"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+                    <View
+                        android:id="@+id/top_pick_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#8D8D8D"
+                        app:layout_constraintTop_toBottomOf="@+id/top_pick"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/popular"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/avenir_book"
+                        android:paddingVertical="10dp"
+                        android:paddingStart="24dp"
+                        android:text="@string/popular"
+                        android:textColor="#8D8D8D"
+                        android:textSize="22sp"
+                        app:layout_constraintTop_toBottomOf="@+id/top_pick_view"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+                    <View
+                        android:id="@+id/popular_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#8D8D8D"
+                        app:layout_constraintTop_toBottomOf="@+id/popular"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+                    <TextView
+                        android:id="@+id/lunch"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/avenir_book"
+                        android:paddingVertical="10dp"
+                        android:paddingStart="24dp"
+                        android:text="@string/lunch"
+                        android:textColor="#8D8D8D"
+                        android:textSize="22sp"
+                        app:layout_constraintTop_toBottomOf="@+id/popular_view"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+                    <View
+                        android:id="@+id/lunch_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#8D8D8D"
+                        app:layout_constraintTop_toBottomOf="@+id/lunch"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/coffee"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/avenir_book"
+                        android:paddingVertical="10dp"
+                        android:paddingStart="24dp"
+                        android:text="@string/coffee"
+                        android:textColor="#8D8D8D"
+                        android:textSize="22sp"
+                        app:layout_constraintTop_toBottomOf="@+id/lunch_view"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+                    <View
+                        android:id="@+id/coffee_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#8D8D8D"
+                        app:layout_constraintTop_toBottomOf="@+id/coffee"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/search_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/place_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginBottom="150dp"
+                            android:layout_weight="1"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:listitem="@layout/home_recycler_tab" />
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/map_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <fragment
+                        android:id="@+id/search_map_view"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="700dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/map_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/transparent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:listitem="@layout/home_recycler_tab" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/map_submit_view"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#351347"
+                android:gravity="center"
+                android:text="@string/map_view"
+                android:textAppearance="@style/btnText"
+                android:textColor="#F7F7F7"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/list_submit_view"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#351347"
+                android:gravity="center"
+                android:text="@string/list_view"
+                android:textAppearance="@style/btnText"
+                android:textColor="#F7F7F7"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

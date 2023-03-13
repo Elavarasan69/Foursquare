@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="tabText">
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/avenir_medium</item>
+    </style>
+    <style name="roundedImageViewRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="navText">
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/avenir_medium</item>
+    </style>
+    <style name="btnText">
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/avenir_medium</item>
+    </style>
+
+    <style name="customRatingBar" parent="Widget.AppCompat.RatingBar">
+        <item name="android:progressDrawable">@drawable/custom_rating_bar</item>
+    </style>
+
+    <style name="CustomDialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+</resources>

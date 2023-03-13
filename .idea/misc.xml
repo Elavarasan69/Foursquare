@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Foursquare/app/src/main/res/drawable-xhdpi/cursor_custom.xml" value="0.2365" />
+        <entry key="..\:/Foursquare/app/src/main/res/drawable/custom_bottom_line.xml" value="0.1715" />
+        <entry key="..\:/Foursquare/app/src/main/res/drawable/custom_bullet.xml" value="0.2375" />
+        <entry key="..\:/Foursquare/app/src/main/res/drawable/custom_button.xml" value="0.25" />
+        <entry key="..\:/Foursquare/app/src/main/res/drawable/custom_close_round.xml" value="0.1145" />
+        <entry key="..\:/Foursquare/app/src/main/res/drawable/custom_edittext_background.xml" value="0.1145" />
+        <entry key="..\:/Foursquare/app/src/main/res/drawable/custom_rating.xml" value="0.2465" />
+        <entry key="..\:/Foursquare/app/src/main/res/drawable/custom_rating_background.xml" value="0.1145" />
+        <entry key="..\:/Foursquare/app/src/main/res/drawable/custom_rating_bar.xml" value="0.1145" />
+        <entry key="..\:/Foursquare/app/src/main/res/drawable/custom_rating_empty.xml" value="0.1285" />
+        <entry key="..\:/Foursquare/app/src/main/res/drawable/custom_rating_fill.xml" value="0.183" />
+        <entry key="..\:/Foursquare/app/src/main/res/drawable/custom_rating_red.xml" value="0.2465" />
+        <entry key="..\:/Foursquare/app/src/main/res/drawable/custom_rating_yellow.xml" value="0.2465" />
+        <entry key="..\:/Foursquare/app/src/main/res/drawable/custom_round.xml" value="0.3235" />
+        <entry key="..\:/Foursquare/app/src/main/res/drawable/custom_search_bg.xml" value="0.37" />
+        <entry key="..\:/Foursquare/app/src/main/res/drawable/custom_textbox.xml" value="0.3235" />
+        <entry key="..\:/Foursquare/app/src/main/res/drawable/icon_add.xml" value="0.18" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout-land/activity_feedback.xml" value="0.40074906367041196" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout-land/fragment_add_review.xml" value="0.25" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout-land/fragment_add_text_review.xml" value="0.518955349620893" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout-land/fragment_near_you.xml" value="0.25" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/activity_.xml" value="0.19342105263157894" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/activity_aboutus.xml" value="0.25" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/activity_container.xml" value="0.25" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/activity_favourite.xml" value="0.22" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/activity_feedback.xml" value="0.25" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/activity_filter.xml" value="0.33" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/activity_filter_in_favourite.xml" value="0.32587719298245615" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/activity_hotel_container.xml" value="0.20526315789473684" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/activity_individual_hotel_container.xml" value="0.20614035087719298" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/activity_main.xml" value="0.3729166666666667" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/activity_otpactivity.xml" value="0.3140350877192982" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/activity_password.xml" value="0.3140350877192982" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/activity_register.xml" value="0.33" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/activity_search.xml" value="0.25" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/activity_search_filter_container.xml" value="0.3140350877192982" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/activity_splash_screen.xml" value="0.22" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/custom_toolbar_home.xml" value="0.33" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/favourite_tab.xml" value="0.325" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/fragment_add_review.xml" value="0.22" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/fragment_add_text_review.xml" value="0.26228070175438595" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/fragment_coffee.xml" value="0.1" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/fragment_favourite.xml" value="0.2754385964912281" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/fragment_feedback.xml" value="0.2754385964912281" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/fragment_filter.xml" value="0.24201954397394138" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/fragment_first.xml" value="0.32587719298245615" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/fragment_hotel_detail.xml" value="0.3480422622747048" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/fragment_individual_photo.xml" value="0.22" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/fragment_login.xml" value="0.2482456140350877" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/fragment_lunch.xml" value="0.3043859649122807" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/fragment_near_you.xml" value="0.2754385964912281" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/fragment_otp.xml" value="0.3140350877192982" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/fragment_password.xml" value="0.32587719298245615" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/fragment_photo.xml" value="0.41228070175438597" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/fragment_popular.xml" value="0.32587719298245615" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/fragment_register.xml" value="0.32587719298245615" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/fragment_registration.xml" value="0.2482456140350877" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/fragment_review.xml" value="0.25" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/fragment_search.xml" value="0.22" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/fragment_toppick.xml" value="0.2754385964912281" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/home_recycler_tab.xml" value="0.67" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/menu_header.xml" value="0.22" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/photo_review_tab.xml" value="0.2" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/place_tab.xml" value="0.67" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/rating_alertbox.xml" value="0.33" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/review_tab.xml" value="0.67" />
+        <entry key="..\:/Foursquare/app/src/main/res/layout/search_tab.xml" value="0.2855263157894737" />
+        <entry key="..\:/Foursquare/app/src/main/res/menu/navigation_menu.xml" value="0.5" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

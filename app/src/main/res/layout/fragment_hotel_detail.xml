@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        tools:context=".view.fragment.individualhotel.HotelDetailFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/background_img"
+                android:layout_width="match_parent"
+                android:layout_height="325dp"
+                android:foreground="#8A0B0B0B"
+                android:scaleType="fitXY"
+                tools:src="@drawable/hotel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <ImageButton
+                    android:id="@+id/back_ibn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:background="@color/transparent"
+                    android:minWidth="50dp"
+                    android:minHeight="50dp"
+                    android:src="@drawable/back_icon" />
+
+                <TextView
+                    android:id="@+id/hotel_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingTop="10dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/avenir_medium"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/share_ibn"
+                    app:layout_constraintStart_toEndOf="@+id/back_ibn"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Attils" />
+
+                <ImageButton
+                    android:id="@+id/share_ibn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/fav_ibn"
+                    android:background="@color/transparent"
+                    android:minWidth="50dp"
+                    android:minHeight="50dp"
+                    android:src="@drawable/share_icon"
+                    app:layout_constraintEnd_toStartOf="@+id/fav_ibn"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/fav_ibn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:background="@color/transparent"
+                    android:minWidth="50dp"
+                    android:minHeight="50dp"
+                    android:src="@drawable/favourite_icon" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintBottom_toBottomOf="@+id/background_img"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/start_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rating_icon_unselected_2x" />
+
+                <ImageView
+                    android:id="@+id/start_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/rating_icon_unselected_2x" />
+
+                <ImageView
+                    android:id="@+id/start_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/rating_icon_unselected_2x" />
+
+                <ImageView
+                    android:id="@+id/start_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/rating_icon_unselected_2x" />
+
+                <ImageView
+                    android:id="@+id/start_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/rating_icon_unselected_2x" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/hotel_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/avenir_book"
+                android:lineHeight="32dp"
+                android:maxLines="2"
+                tools:text="Indian Restaurant, Chinese Restaurant and Italian Restaurant"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/rating_bar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/rating_ibn"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                android:drawableTop="@drawable/rating_icon"
+                android:fontFamily="@font/avenir_book"
+                android:minWidth="75dp"
+                android:minHeight="75dp"
+                android:text="Rating"
+                android:textAlignment="center"
+                android:textColor="#8D8D8D"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/photo_ibn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/background_img" />
+
+            <TextView
+                android:id="@+id/photo_ibn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/transparent"
+                android:drawableTop="@drawable/photos_icon"
+                android:fontFamily="@font/avenir_book"
+                android:minWidth="75dp"
+                android:minHeight="75dp"
+                android:text="Photos"
+                android:textAlignment="center"
+                android:textColor="#8D8D8D"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/background_img" />
+
+            <TextView
+                android:id="@+id/review_ibn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="40dp"
+                android:background="@color/transparent"
+                android:drawableTop="@drawable/review_icon"
+                android:fontFamily="@font/avenir_book"
+                android:minWidth="75dp"
+                android:minHeight="75dp"
+                android:text="Review"
+                android:textAlignment="center"
+                android:textColor="#8D8D8D"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/photo_ibn"
+                app:layout_constraintTop_toBottomOf="@+id/background_img" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_white"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/photo_ibn" />
+
+            <TextView
+                android:id="@+id/overview_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/avenir_book"
+                android:text="Overview"
+                android:textColor="#351347"
+                android:textSize="22sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line" />
+
+            <TextView
+                android:id="@+id/desc_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/avenir_book"
+                android:textColor="#8D8D8D"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/overview_tv" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="30dp"
+                android:background="#F5F5F5"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/desc_tv">
+
+                <fragment
+                    android:id="@+id/hotel_map_view"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:background="#F5F5F5"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+
+                    <TextView
+                        android:id="@+id/hotel_address_tv"
+                        android:layout_width="200dp"
+                        android:layout_height="85dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/avenir_medium"
+                        android:lineHeight="17dp"
+                        android:paddingStart="30dp"
+                        android:paddingTop="15dp"
+                        android:textAlignment="viewStart"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/hotel_contact_tv"
+                        android:layout_width="200dp"
+                        android:layout_height="42.5dp"
+                        android:layout_below="@+id/hotel_address_tv"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/avenir_medium"
+                        android:lineHeight="17dp"
+                        android:paddingStart="30dp"
+                        android:paddingTop="10dp"
+                        android:textAlignment="viewStart"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/hotel_distance_tv"
+                        android:layout_width="200dp"
+                        android:layout_height="42.5dp"
+                        android:layout_below="@+id/hotel_contact_tv"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginBottom="5dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/avenir_medium"
+                        android:lineHeight="17dp"
+                        android:paddingStart="30dp"
+                        android:paddingTop="10dp"
+                        android:textAlignment="viewStart"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/add_review"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#351347"
+                android:text="@string/add_review"
+                android:gravity="center"
+                android:textAppearance="@style/btnText"
+                android:textColor="#F7F7F7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bottom_layout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</layout>
